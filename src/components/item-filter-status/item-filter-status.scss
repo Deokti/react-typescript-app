@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.status-filter {
+  display: flex;
+  &-item {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    padding: 5.4px 25px;
+    background-color: $element-background;
+    &:not(.item-active):hover {
+      background-color: rgba($element-background, 0.5);
+    }
+    &.item-active {
+      background-color: $color-for-active;
+    }
+  }
+}

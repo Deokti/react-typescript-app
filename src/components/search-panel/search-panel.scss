@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.seach-panel {
+  width: 390px;
+  height: 35px;
+  background-color: $element-background;
+  border: none;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  &::placeholder { color: #fff; }
+}
