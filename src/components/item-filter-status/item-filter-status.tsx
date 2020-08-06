@@ -9,11 +9,10 @@ const itemsFilterStatus = [
   { name: 'done', label: 'Выполненные' },
 ];
 
-export const StatusFilterItem = () => {
-  const status = 'all';
 
+export const StatusFilterItem: React.FC<{ filterStatus: string }> = ({ filterStatus }) => {
   const createFilter = itemsFilterStatus.map(({ name, label }) => {
-    const addClass = status === name ? 'item-active' : '';
+    const addClass = filterStatus === name ? 'item-active' : '';
 
     return (
       <li className={`status-filter-item ${addClass}`}
