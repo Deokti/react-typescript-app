@@ -10,14 +10,15 @@ const itemsFilterStatus = [
 ];
 
 
-export const StatusFilterItem: React.FC<{ filterStatus: string }> = ({ filterStatus }) => {
+export const StatusFilterItem: React.FC<{ filterStatus: string, onChangeFilterStatus(filterStatus: string): void }> = ({ filterStatus, onChangeFilterStatus }) => {
   const createFilter = itemsFilterStatus.map(({ name, label }) => {
     const addClass = filterStatus === name ? 'item-active' : '';
 
     return (
       <li className={`status-filter-item ${addClass}`}
         data-filter={name}
-        key={name}>
+        key={name}
+        onClick={() => onChangeFilterStatus(name)}>
         {label}
       </li>
     );

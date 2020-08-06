@@ -11,8 +11,6 @@
     &:not(.item-active):hover {
       background-color: rgba($element-background, 0.5);
     }
-    &.item-active {
-      background-color: $color-for-active;
-    }
+    &.item-active { background-color: $color-for-active; }
   }
 }

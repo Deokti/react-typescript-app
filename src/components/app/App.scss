@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 @import '../../styles/bootstrap-reboot.min.scss';
 @import '../../styles/library-flex.scss';
 @import '../../styles/variables.scss';
@@ -6,6 +7,7 @@
 
 body {
   background-color: $main-background;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -19,4 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  &-content, &-form { padding-top: 16px; }
+  margin-bottom: 10rem;
 }

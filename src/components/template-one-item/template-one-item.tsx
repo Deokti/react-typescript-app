@@ -1,14 +1,16 @@
 type templateFirstTodoType = {
   label: string,
   done: boolean,
-  id: string
+  id: number
 }
+
+let id = 0;
 
 const templateOneItem = (label: string): templateFirstTodoType => {
   return {
     label,
     done: false,
-    id: String(new Date().valueOf())
+    id: id++,
   }
 };
 
